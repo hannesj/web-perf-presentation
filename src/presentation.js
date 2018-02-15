@@ -25,6 +25,7 @@ import CodeSlide from 'spectacle-code-slide';
 import createTheme from 'spectacle/lib/themes/default';
 
 import waterfallHs from './waterfall_hs.png'
+import waterfallYle from './waterfall_yle.png'
 import videoHs from './video_hs.mp4'
 import videoYle from './video_yle.mp4'
 
@@ -34,6 +35,7 @@ import webpack3 from './webpack-analyzer3.jpg'
 
 preload([
   waterfallHs,
+  waterfallYle,
   videoHs,
   videoYle,
   webpack1,
@@ -325,6 +327,9 @@ export default class Presentation extends React.Component {
           <video controls>
             <source src={videoYle}/>>
           </video>
+        </Slide>
+        <Slide textColor="white" fit>
+          <Image src={waterfallYle}/>
         </Slide>
         <Slide textColor="white">
           <Heading size={3} caps fit textColor="white">
